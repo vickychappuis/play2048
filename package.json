@@ -1,0 +1,35 @@
+{
+  "name": "play2048",
+  "version": "1.0.0",
+  "description": "A little brain snack to play while your agents finish their work — 2048 game in your terminal",
+  "keywords": ["game", "2048", "terminal", "cli", "ink", "puzzle"],
+  "author": "Victoria Chappuis",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vickychappuis/play2048.git"
+  },
+  "type": "module",
+  "main": "./dist/index.js",
+  "bin": {
+    "play2048": "./dist/index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "dev": "tsx src/index.tsx",
+    "build": "tsc && echo '#!/usr/bin/env node\n' > dist/index.tmp && cat dist/index.js >> dist/index.tmp && mv dist/index.tmp dist/index.js && chmod +x dist/index.js",
+    "start": "node dist/index.js",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "ink": "^4.4.1",
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.55",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3",
+    "vitest": "^1.6.0"
+  }
+}
