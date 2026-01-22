@@ -218,6 +218,11 @@ export const App = () => {
           Controls: arrows/WASD move • r restart • q/esc/ctrl+c quit
         </Text>
       </Box>
+
+      <Box marginTop={1} flexDirection="column">
+        <Text dimColor>Made with ♥ by vickychappuis</Text>
+        <Text dimColor>issues/PRs: github.com/vickychappuis/play2048</Text>
+      </Box>
     </Box>
   );
 };

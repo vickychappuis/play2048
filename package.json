@@ -1,8 +1,15 @@
 {
   "name": "play2048",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A little brain snack to play while your agents finish their work — 2048 game in your terminal",
-  "keywords": ["game", "2048", "terminal", "cli", "ink", "puzzle"],
+  "keywords": [
+    "game",
+    "2048",
+    "terminal",
+    "cli",
+    "ink",
+    "puzzle"
+  ],
   "author": "Victoria Chappuis",
   "repository": {
     "type": "git",
